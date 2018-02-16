@@ -1,0 +1,30 @@
+-
+  id: 900
+  title: "Kaffepause"
+  place: "Utenfor Auditoriet"
+  service: true
+  description: "Tid for å hvile hjernen og slå av en prat om hva man har hørt"
+-
+  id: 901
+  title: "Matpause"
+  place: "Utenfor Auditoriet"
+  service: true
+  description: "Tid for å hvile hjernen og slå av en prat om hva man har hørt"
+-
+  id: 001
+  title: "Foredrag 1"
+  description: "Beskrivelse"
+  subtype: lightningtalk
+  speakers: [3, 6]
+-
+  id: 002
+  title: "Foredrag 2"
+  description: "Beskrivelse"
+  subtype: lightningtalk
+  speakers: [3, 6]
+-
+  id: 003
+  title: "Foredrag 3"
+  description: "Beskrivelse"
+  subtype: lightningtalk
+  speakers: [3, 6]
