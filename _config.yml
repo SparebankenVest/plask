@@ -44,3 +44,5 @@ footerBlocks:
   links:
    - {link: "http://spv.no", text: "SPV.no"}
    - {link: "https://frende.no", text: "Frende.no"}
+
+exclude: [vendor]
