@@ -1,0 +1,72 @@
+- 
+  id: 1
+  name: "Øystein"
+  surname: "Haga"
+  company: "SPV"
+  title: ""
+  bio: ""
+  rockstar: true
+- 
+  id: 2
+  name: "Rune"
+  surname: "Skår"
+  company: "SPV"
+  title: ""
+  bio: ""
+  rockstar: true
+- 
+  id: 3
+  name: "Christian"
+  surname: "Wallervand"
+  company: "SPV"
+  title: ""
+  bio: ""
+  rockstar: true
+- 
+  id: 4
+  name: "Erlend"
+  surname: "Røsjø"
+  company: "SPV"
+  title: ""
+  bio: ""
+  rockstar: true
+- 
+  id: 5
+  name: "David"
+  surname: "Mellum"
+  company: "SPV"
+  title: ""
+  bio: ""
+  rockstar: true
+- 
+  id: 6
+  name: "Tony"
+  surname: "Træet"
+  company: "SPV"
+  title: ""
+  bio: ""
+  rockstar: true
+- 
+  id: 7
+  name: "Peter"
+  surname: "Aglen"
+  company: "SPV"
+  title: ""
+  bio: ""
+  rockstar: true
+- 
+  id: 8
+  name: "Dag"
+  surname: "Skjelvik"
+  company: "SPV"
+  title: ""
+  bio: ""
+  rockstar: true
+- 
+  id: 9
+  name: "Daniel"
+  surname: "Lundekvam"
+  company: "SPV"
+  title: ""
+  bio: ""
+  rockstar: true

@@ -12,19 +12,59 @@
   description: "Tid for å hvile hjernen og slå av en prat om hva man har hørt"
 -
   id: 001
-  title: "Foredrag 1"
-  description: "Beskrivelse"
+  title: "Docker i SPV"
+  description: "Rask intro om docker. Vise eksempel på hva vi kan gjøre i spv for å dra nytte av denne teknologien"
   subtype: lightningtalk
-  speakers: [3, 6]
+  speakers: [1]
 -
   id: 002
-  title: "Foredrag 2"
-  description: "Beskrivelse"
+  title: "Skårblikk på GDPR"
+  description: "I følge www.gdprcountdownclock.com er det nå 106dager 11timer 26minutter og 04sekunder til den magiske GDPR datoen... men hva betyr det egentlig..? 
+  The EU General Data Protection Regulation (GDPR) replaces the Data Protection Directive 95/46/EC and was designed to harmonize data privacy laws across Euro... bla bla bla bla 
+  
+  (Ble utfordret at Ingrid til å gi mitt skråblikk på GDPR....)"
   subtype: lightningtalk
-  speakers: [3, 6]
+  speakers: [2]
 -
   id: 003
-  title: "Foredrag 3"
-  description: "Beskrivelse"
+  title: "Managing your own npm ecosystem"
+  description: "Deling av kode er like viktig som det er vanskelig og npm er et flott verktøy for å kunne oppnå deling med andre personer i verden eller i ditt selskap.
+I løpet av denne lyntalen vil jeg dele erfaringer og det jeg mener er best practice rundt hvordan man bør jobbe med et økosystem av npm-pakker."
   subtype: lightningtalk
-  speakers: [3, 6]
+  speakers: [3]
+-
+  id: 004
+  title: "Kubernetes Cluster med Raspberry Pi"
+  description: "Kubernetes-cluster med Raspberry Pi show and tell"
+  subtype: lightningtalk
+  speakers: [4]
+-
+  id: 005
+  title: "Matematisk garantert anonymitet"
+  description: ""
+  subtype: lightningtalk
+  speakers: [5]
+-
+  id: 006
+  title: "Scaffolding your way out of repetetive work"
+  description: "Hvordan scaffolding øker produktivitet"
+  subtype: lightningtalk
+  speakers: [6]
+-
+  id: 007
+  title: "Hold orden i pakkekaoset med Sharpkeeper"
+  description: "SharpKeeper benytter API'ene til GitHub Og NuGet for å lage en oversikt av hvilke NuGet-pakker som er brukt hvor, og i hvilke versjoner. På toppen ligger et enkelt brukergrensesnitt for å søke blant prosjekter og pakker, og for å visualisere versjonskonflikter, bruk av svartelistede pakker og annet. I tillegg kan SharpKeeper benyttes for kjapp og enkel oppdatering av pakker."
+  subtype: lightningtalk
+  speakers: [7]
+-
+  id: 008
+  title: "Få oversikt på SQLserveren din"
+  description: "Vi ser på hvordan vi med helt vanlige SQL spørringer kan få oversikt over innhold og tilstand på SQL Server."
+  subtype: lightningtalk
+  speakers: [8]
+-
+  id: 009
+  title: "RXJS/Net"
+  description: "Rx - reactive extensions. Hva er det? Hva kan det hjelpe oss med? Etc."
+  subtype: lightningtalk
+  speakers: [9]

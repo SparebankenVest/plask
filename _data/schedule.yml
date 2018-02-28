@@ -8,8 +8,23 @@
   timeslots:
     - {
     	startTime: "12:00",
-    	endTime: "13:00",
+    	endTime: "12:10",
     	sessionIds: [001, 002, 003]
+    }
+    - {
+    	startTime: "12:15",
+    	endTime: "12:25",
+    	sessionIds: [004, 005, 006]
+    }
+    - {
+    	startTime: "12:30",
+    	endTime: "12:40",
+    	sessionIds: [007, 008, 009]
+    }
+    - {
+    	startTime: "12:45",
+    	endTime: "12:55",
+    	sessionIds: [010, 011, 012]
     }
     - {
         startTime: "13:00",
