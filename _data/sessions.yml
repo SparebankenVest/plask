@@ -68,3 +68,154 @@ I løpet av denne lyntalen vil jeg dele erfaringer og det jeg mener er best prac
   description: "Rx - reactive extensions. Hva er det? Hva kan det hjelpe oss med? Etc."
   subtype: lightningtalk
   speakers: [9]
+-
+  id: 010
+  title: "React Native - En liten Intro"
+  description: "Det blir en intro til React Native, og hva som skiller det fra react i web-verdenen. Hvis det blir tid kommer jeg til å sammenligne react native med andre måter å utvikle mobil-apper på."
+  subtype: lightningtalk
+  speakers: [10]
+-
+  id: 011
+  title: "Power BI mobilløsning"
+  description: "skal vise Power BI services (mobil og i Skyen)"
+  subtype: lightningtalk
+  speakers: [11]
+-
+  id: 012
+  title: "CSS in JS"
+  description: "Hvorfor og hvordan bruke CSS in JS"
+  subtype: lightningtalk
+  speakers: [12]
+-
+  id: 013
+  title: "Automating automation"
+  description: "By automation and simplification of business processes, IT is changing peoples daily job. Let's take 10 minutes to think about how we are changing our own daily job."
+  subtype: lightningtalk
+  speakers: [13]
+-
+  id: 014
+  title: "ML i produksjon"
+  description: "En gjennomgang av tekiske utfordringer ved bruk av maskinlæringsmodeller i produksjon, og noen løsninger. Python og R i en Microsoft-verden. Automatisering og gjenbruk, overvåkning av prediktiv ytelse, rullende oppdatering, spørringer i sanntid og batch, og i månn av tid støtte for optimering ved AB-tester og Multi-armed bandits."
+  subtype: lightningtalk
+  speakers: [14]
+-
+  id: 015
+  title: "LinqPad For the win !!!"
+  description: ""
+  subtype: lightningtalk
+  speakers: [15]
+-
+  id: 016
+  title: "Occupy Jonsvoll"
+  description: "Raljeringer rundt kreativitet og rom"
+  subtype: lightningtalk
+  speakers: [16]
+-
+  id: 017
+  title: "Visual Analytics - Meir enn berre fleirfarga stopediagram"
+  description: "Lyn-introduksjon til fagområdet Visual Analytics, bl.a. kva problem som prøver å løysast og kva metodar og verktøy som finnes."
+  subtype: lightningtalk
+  speakers: [17]
+-
+  id: 018
+  title: "Slipp løs testernes skjulte talenter"
+  description: "GUITesting er svært vanskelig, både teknisk og organisatorisk sett
+
+Hvem er ansvarlig for at testene vedlikeholdes?
+Hva skal vi teste?
+Hvordan lager vi testene?
+De fire siste årene i Sparebanken Vest har vi hatt flere mislykkede forsøk på å komme i gang med GUITesting. I januar i år ble teamet jeg jobber på bedt om å ta opp denne tråden på nytt igjen. Etter å ha evaluert et 'point and click verktøy' uten noe videre suksess bestemte vi oss for å prøve noe mer radikalt.
+
+Så hva gjorde vi? I samarbeid med utviklerne lot vi våre ikke-tekniske testere lære seg å programmere, og gav dem dermed evnen til å kunne automatisere store deler av det manuelle testarbeidet. I løpet av et halvt år hadde de opparbeidet seg tilstrekkelig med kunnskap til å kunne skrive, refaktorere og vedlikeholde tester. Testerne følger nå den samme arbeidsflyten som utviklerne (feature branch, pull request, review av minium 1 person på teamet før koden merges), og GUItestkoden lever sammen med de respektive applikasjonene.
+"
+  subtype: lightningtalk
+  speakers: [18]
+-
+  id: 019
+  title: "Kort om lengelevende prosesser"
+  description: "Innen forsikring har vi flere forretningsprosesser som kan leve lenge, i måneder og år. Et skadeoppgjør kan for eksempel ta alt fra minutter til flere år å avslutte. Å håndtere slike forretningsprosesser gir noen utfordringer som man ikke møter på i mer transaksjonsdrevne systemer.
+
+Hva er tilstanden til en prosess til enhver tid? Hvilke prossesteg har den vært gjennom? Hvordan finner man ut når og hva som har gått galt dersom en flyt ikke går som forventet? Dersom en transaksjon feiler kan vi ikke bare be kunde eller bruker om å prøve på nytt, dersom prosessen tar 3 måneder. Og hva gjør vi når vi trenger å endre på deler av modellen, uten å ødelegge for alle de prosessene som allerede er i drift?"
+  subtype: lightningtalk
+  speakers: [19]
+-
+  id: 020
+  title: "Cognitive Services"
+  description: "Me fire som reiste på NDC (Andreas, Stig N, Lasse, Daniel) likte godt en talk av Scott Guthrie hvor han demonstrerer bruk av Azure Cognitive Services og vi har lyst å vise litt hvordan dette fungerer og deretter snakke litt om mulighetene bak dette. Det er foreløpig uvisst hvem av oss som skal snakke om dette, men det kan vi komme tilbake til."
+  subtype: lightningtalk
+  speakers: [20, 18]
+-
+  id: 021
+  title: "Vim level 1-4 på 21 år"
+  description: "i<esc>:wq jk jkhl wefxFxtxTx cdy ggGdd10i<esc>10dd n. q"
+  subtype: lightningtalk
+  speakers: [21]
+-
+  id: 022
+  title: "C#7 Nye og nyttige features"
+  description: "Etter å ha blitt inspirert av Jon Skeet sin gjennomgang på NDC 2018 prøver vi å oppsummere noen av de beste nye featurene i C# 7.
+ValueTuples, Local Functions og Pattern Matching (ikke brennsikkert vi rekker over alle, men gjør et hederlig forsøk). Dette er tenkt som en lyntale."
+  subtype: lightningtalk
+  speakers: [9, 22]
+-
+  id: 023
+  title: "Hvorfor brukerteste"
+  description: "Vise resultater fra de siste brukertestene utført i SPV for å øke forståelsen for hvorfor dette er så viktig å gjøre så tidlig som mulig - helst på design nivå"
+  subtype: lightningtalk
+  speakers: [23]
+-
+  id: 024
+  title: "Wallaby.js - ncrunch (og mer ...) for javascript"
+  description: "Er du lei av å drikke kaffe... mens du venter på feedback fra utviklingsmiljøet ditt? Med Wallaby rekker du dessverre ikke å drikke kaffe.
+
+Wallaby viser testtilstand, testverdier og coverage rett i editoren din rasker enn du klarer å skrive kode"
+  subtype: lightningtalk
+  speakers: [24]
+-
+  id: 025
+  title: "Virtuelle hvelv"
+  description: "Hvordan sikre passord og andre hemmeligheter fra lekasje med Hashicorps Vault."
+  subtype: lightningtalk
+  speakers: [25]
+-
+  id: 026
+  title: "Wagtail - den siste dinosauren"
+  description: "Wagtail er et enkelt lite CMS, bygd på toppen av Django: et kraftig, anerkjent og utprøvd rammeverk. Det er en drøm å utvikle i ettersom alt er skrevet og konfigurert i kode. Vi ser på hvor enkelt det er å utvikle i og utvide Wagtail."
+  subtype: lightningtalk
+  speakers: [26]
+-
+  id: 027
+  title: "Frå ingenting til app som viser saldo på Fitbit"
+  description: "Treng 30 min sånn ca. Ynskjer vise opprettelsen av ein app til Fitbit som hentar saldo fra Sbanken sitt nye API. Demo/koding live."
+  subtype: lightningtalk
+  speakers: [27]
+-
+  id: 028
+  title: "Hardkår hardkoding"
+  description: "Frå database til kode med solid best practice enterprise hardkoding."
+  subtype: lightningtalk
+  speakers: [28]
+-
+  id: 029
+  title: "Parcel vs. Webpack"
+  description: "Lyntale der eg sammenligner den nye bundleren Parcel (https://parceljs.org/) med webpack. Pros / cons."
+  subtype: lightningtalk
+  speakers: [29]
+-
+  id: 030
+  title: "Fremtidens arbeidsmetodikk i Frendes IT-avdeling"
+  description: "Vi ser hvordan Frendes utviklingsprosess har blitt som den er og hvor den skal i fremtiden for å lage norges beste og mest fremtidsrettede forsikringsløsninger."
+  subtype: lightningtalk
+  speakers: [30]
+-
+  id: 031
+  title: "Back to the future"
+  description: "Er vi posisjonert til å være teknologisk innovative? Kan vi dra nytte av det nyeste innen teknologi om vi ønsker det? Utfordres vi teknologisk (i positiv retning) av våre samarbeidspartnere? Har vi en kultur som understøtter innovasjon? Hvor er vi og hvilke teknoligiske muligheter har vi om 5 år? Jeg legger hodet på blokken med mine observasjoner og refleksjoner etter 1 måned i banken som arkitekt. "
+  subtype: lightningtalk
+  speakers: [31]
+-
+  id: 032
+  title: "Se hva vi har laget"
+  description: "Videoer av Selvbetjent kreditt-løsningene har blitt presentert i en rekke fora og kanaler - og fått gode tilbakemeldinger. Gjennom å filme løsningene fikk vi raskt presentert hva som ble utviklet, og hvor enkle løsningene er for kunden. I dette innlegget vil du få se verktøyet som ble brukt, hvordan du selv kan lage videoer, og et eksempel på hvordan videoer kan tilpasses for presentasjon."
+  subtype: lightningtalk
+  speakers: [32]
