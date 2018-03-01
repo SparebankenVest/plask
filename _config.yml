@@ -14,7 +14,7 @@ title: "Plask 2018"
 email: ""
 description: "Jonsvolls internkonferanse med SPV og Frende"
 baseurl: "/plask"
-url: "https://spv.github.io"
+url: "http://plask.io"
 permalink: "/blog/:title"
 
 # Hero Block
