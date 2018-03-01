@@ -40,7 +40,9 @@
 						<div class="people-details">
 							<div class="row">
 								<div class="col-md-2 col-sm-2">
-									<div class="flow-img img-circle people-img" style="background-image: url({{ site.baseurl | append: '/img/people/' | append: speaker.thumbnailUrl }})"></div>
+									{% if speaker.thumbnailUrl != null %}
+										<div class="flow-img img-circle people-img" style="background-image: url({{ site.baseurl | append: '/img/people/' | append: speaker.thumbnailUrl }})"></div>
+									{% endif %}
 								</div>
 								<div class="col-md-10 col-sm-10 details">
 									<p class="name">{{ speaker.name }} {{ speaker.surname }}
