@@ -13,8 +13,8 @@ exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 title: "Plask 2018"
 email: ""
 description: "Jonsvolls internkonferanse med SPV og Frende"
-baseurl: "/"
-url: "https://spv.github.io/plask"
+baseurl: "/plask"
+url: "https://spv.github.io"
 permalink: "/blog/:title"
 
 # Hero Block
@@ -44,3 +44,5 @@ footerBlocks:
   links:
    - {link: "http://spv.no", text: "SPV.no"}
    - {link: "https://frende.no", text: "Frende.no"}
+
+exclude: [vendor]
