@@ -13,7 +13,6 @@ exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 title: "Plask 2018"
 email: ""
 description: "Jonsvolls internkonferanse med SPV og Frende"
-baseurl: "/plask"
 url: "http://plask.io"
 permalink: "/blog/:title"
 
