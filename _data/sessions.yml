@@ -143,7 +143,7 @@ Hva er tilstanden til en prosess til enhver tid? Hvilke prossesteg har den vært
   title: "Cognitive Services"
   description: "Me fire som reiste på NDC (Andreas, Stig N, Lasse, Daniel) likte godt en talk av Scott Guthrie hvor han demonstrerer bruk av Azure Cognitive Services og vi har lyst å vise litt hvordan dette fungerer og deretter snakke litt om mulighetene bak dette. Det er foreløpig uvisst hvem av oss som skal snakke om dette, men det kan vi komme tilbake til."
   subtype: lightningtalk
-  speakers: [20, 18]
+  speakers: [20, 34]
 -
   id: 021
   title: "Vim level 1-4 på 21 år"
@@ -156,7 +156,7 @@ Hva er tilstanden til en prosess til enhver tid? Hvilke prossesteg har den vært
   description: "Etter å ha blitt inspirert av Jon Skeet sin gjennomgang på NDC 2018 prøver vi å oppsummere noen av de beste nye featurene i C# 7.
 ValueTuples, Local Functions og Pattern Matching (ikke brennsikkert vi rekker over alle, men gjør et hederlig forsøk). Dette er tenkt som en lyntale."
   subtype: lightningtalk
-  speakers: [9, 22]
+  speakers: [33, 22]
 -
   id: 023
   title: "Hvorfor brukerteste"
