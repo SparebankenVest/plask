@@ -254,3 +254,19 @@
   title: ""
   bio: ""
   rockstar: true
+- 
+  id: 33
+  name: "Daniel"
+  surname: "Selvik"
+  company: ""
+  title: ""
+  bio: ""
+  rockstar: true
+- 
+  id: 34
+  name: "Andreas"
+  surname: "Dukstad"
+  company: ""
+  title: ""
+  bio: ""
+  rockstar: true
