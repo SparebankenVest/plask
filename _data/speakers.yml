@@ -112,7 +112,7 @@
   rockstar: true
 - 
   id: 15
-  name: "henrik"
+  name: "Henrik"
   surname: "Grundersen"
   company: ""
   title: ""
@@ -160,7 +160,7 @@
   rockstar: true
 - 
   id: 21
-  name: "Tofteberg"
+  name: "Martin Tofteberg"
   surname: "Ulvesæther"
   company: ""
   title: ""
@@ -185,7 +185,7 @@
 - 
   id: 24
   name: "Trond"
-  surname: "Aarø"
+  surname: "Årø"
   company: ""
   title: ""
   bio: ""
@@ -240,7 +240,7 @@
   rockstar: true
 - 
   id: 31
-  name: "Jon"
+  name: "Jon Arild"
   surname: "Tørresdal"
   company: ""
   title: ""
