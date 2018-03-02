@@ -2,7 +2,7 @@
   id: 1
   name: "Øystein"
   surname: "Haga"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -10,7 +10,7 @@
   id: 2
   name: "Rune"
   surname: "Skår"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -18,7 +18,7 @@
   id: 3
   name: "Christian"
   surname: "Wallervand"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -26,7 +26,7 @@
   id: 4
   name: "Erlend"
   surname: "Røsjø"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -34,7 +34,7 @@
   id: 5
   name: "David"
   surname: "Mellum"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -42,7 +42,7 @@
   id: 6
   name: "Tony"
   surname: "Træet"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -50,7 +50,7 @@
   id: 7
   name: "Peter"
   surname: "Aglen"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -58,7 +58,7 @@
   id: 8
   name: "Dag"
   surname: "Skjelvik"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -66,7 +66,7 @@
   id: 9
   name: "Daniel"
   surname: "Lundekvam"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -74,7 +74,7 @@
   id: 10
   name: "Johannes"
   surname: "Fauske"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -82,7 +82,7 @@
   id: 11
   name: "Betzy Bell"
   surname: "Louis"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -90,7 +90,7 @@
   id: 12
   name: "Torleif"
   surname: "Halseth"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -98,7 +98,7 @@
   id: 13
   name: "Lulzim"
   surname: "Bilali"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -106,7 +106,7 @@
   id: 14
   name: "David"
   surname: "Fredman"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -114,7 +114,7 @@
   id: 15
   name: "henrik"
   surname: "Grundersen"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -122,7 +122,7 @@
   id: 16
   name: "Lars"
   surname: "Madsen"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -130,7 +130,7 @@
   id: 17
   name: "Endre"
   surname: "Lidal"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -138,7 +138,7 @@
   id: 18
   name: "Anders"
   surname: "Lørvik"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -146,7 +146,7 @@
   id: 19
   name: "Kjersti"
   surname: "Berg"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -154,7 +154,7 @@
   id: 20
   name: "Stig"
   surname: "Nielsen"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -162,7 +162,7 @@
   id: 21
   name: "Tofteberg"
   surname: "Ulvesæther"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -170,7 +170,7 @@
   id: 22
   name: "Lasse"
   surname: "Tangerås"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -178,7 +178,7 @@
   id: 23
   name: "Vibeke"
   surname: "Storvik"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -186,7 +186,7 @@
   id: 24
   name: "Trond"
   surname: "Årø"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -194,7 +194,7 @@
   id: 25
   name: "Håkon"
   surname: "Lerring"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -202,7 +202,7 @@
   id: 26
   name: "Ovin"
   surname: "Teige"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -210,7 +210,7 @@
   id: 27
   name: "Harald"
   surname: "Bjorøy"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -218,7 +218,7 @@
   id: 28
   name: "Rune Reisegg"
   surname: "jacobsen"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -226,7 +226,7 @@
   id: 29
   name: "Jonas"
   surname: "Lundeland"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -234,7 +234,7 @@
   id: 30
   name: "Kristine"
   surname: "Bergetun"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -242,7 +242,7 @@
   id: 31
   name: "Amar"
   surname: "Bhargava"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
@@ -250,7 +250,7 @@
   id: 32
   name: "Jon"
   surname: "Tørresdal"
-  company: "SPV"
+  company: ""
   title: ""
   bio: ""
   rockstar: true
