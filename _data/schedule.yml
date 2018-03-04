@@ -81,3 +81,18 @@
     	endTime: "15:55",
     	sessionIds: [031, 404, 404 ]
     }
+    - {
+    	startTime: "16:00",
+    	endTime: "17:00",
+    	sessionIds: [998]
+    }
+    - {
+    	startTime: "17:00",
+    	endTime: "18:00",
+    	sessionIds: [997]
+    }
+    - {
+    	startTime: "18:00",
+    	endTime: "18:45",
+    	sessionIds: [996]
+    }
