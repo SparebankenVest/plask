@@ -2,8 +2,26 @@
   id: 999
   title: "🎉 Velkommen"
   place: ""
-  service: true
+  service: false
   description: "Vi ønsker velkommen til PLASK"
+-
+  id: 998
+  title: "Open spaces i 6. etg"
+  place: ""
+  service: false
+  description: "Self organized conversations. The self organized content is known as 'open spaces'. Open Spaces give attendees the opportunity to talk about anything they’d like. A person might suggest a topic they want to learn about, or one they feel like they can help others with. The topics range widely, from highly technical, to pure culture, to board games for networking."
+-
+  id: 997
+  title: "🍺 Skikkelig mat og drikke"
+  place: ""
+  service: true
+  description: "Vi får servert mat og drikke i 6. etg"
+-
+  id: 996
+  title: "Introduksjon til IoT"
+  place: "Auditoriet"
+  service: false
+  description: "Workshop med WebStep"
 -
   id: 900
   title: "☕ Kaffepause"
