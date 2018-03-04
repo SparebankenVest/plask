@@ -1,4 +1,10 @@
 -
+  id: 999
+  title: "Velkommen"
+  place: ""
+  service: true
+  description: "Vi ønsker velkommen til PLASK"
+-
   id: 900
   title: "Kaffepause"
   place: "Utenfor Auditoriet"
