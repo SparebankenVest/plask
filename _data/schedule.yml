@@ -7,10 +7,15 @@
     - {title: "Utåker", color: "#e91e63"}
   timeslots:
     - {
+    	startTime: "11:45",
+    	endTime: "12:00",
+    	sessionIds: [999]
+    }
+    - {
     	startTime: "12:00",
     	endTime: "12:10",
     	sessionIds: [001, 002, 003]
-    }
+    }    
     - {
     	startTime: "12:15",
     	endTime: "12:25",
@@ -48,7 +53,7 @@
     }
     - {
         startTime: "14:00",
-        endTime: "14:15",
+        endTime: "14:10",
         sessionIds: [022, 023, 024]
     }
     - {
@@ -58,21 +63,21 @@
     }
     - {
     	startTime: "15:00",
-    	endTime: "15:15",
+    	endTime: "15:10",
     	sessionIds: [025, 026, 027]
     }
     - {
     	startTime: "15:15",
-    	endTime: "15:30",
+    	endTime: "15:25",
     	sessionIds: [028, 029, 027]
     }
     - {
     	startTime: "15:30",
-    	endTime: "15:45",
+    	endTime: "15:40",
     	sessionIds: [030, 032, 404 ]
     }
     - {
     	startTime: "15:45",
-    	endTime: "16:00",
+    	endTime: "15:55",
     	sessionIds: [031, 404, 404 ]
     }
