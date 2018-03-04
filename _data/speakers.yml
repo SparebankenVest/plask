@@ -113,7 +113,7 @@
 - 
   id: 15
   name: "Henrik"
-  surname: "Grundersen"
+  surname: "Gundersen"
   company: ""
   title: ""
   bio: ""
@@ -137,7 +137,7 @@
 - 
   id: 18
   name: "Anders"
-  surname: "Lørvik"
+  surname: "Rørvik"
   company: ""
   title: ""
   bio: ""
@@ -161,7 +161,7 @@
 - 
   id: 21
   name: "Martin Tofteberg"
-  surname: "Ulvesæther"
+  surname: "Ulvesæter"
   company: ""
   title: ""
   bio: ""
@@ -217,7 +217,7 @@
 - 
   id: 28
   name: "Rune Reisegg"
-  surname: "jacobsen"
+  surname: "Jacobsen"
   company: ""
   title: ""
   bio: ""
