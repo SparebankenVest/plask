@@ -6,16 +6,16 @@
   description: "Vi ønsker velkommen til PLASK"
 -
   id: 900
-  title: "Kaffepause"
+  title: "☕ Kaffepause"
   place: "Utenfor Auditoriet"
   service: true
   description: "Tid for å hvile hjernen og slå av en prat om hva man har hørt"
 -
   id: 901
-  title: "Matpause"
+  title: "🍗 Matpause"
   place: "Utenfor Auditoriet"
   service: true
-  description: "Tid for å hvile hjernen og slå av en prat om hva man har hørt"
+  description: "Matpause"
 -
   id: 001
   title: "Docker i SPV"
@@ -106,7 +106,7 @@ I løpet av denne lyntalen vil jeg dele erfaringer og det jeg mener er best prac
   speakers: [14]
 -
   id: 015
-  title: "LinqPad For the win !!!"
+  title: "LinqPad FTW!"
   description: ""
   subtype: lightningtalk
   speakers: [15]
