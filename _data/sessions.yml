@@ -165,7 +165,7 @@ Hva er tilstanden til en prosess til enhver tid? Hvilke prossesteg har den vært
 -
   id: 020
   title: "Cognitive Services"
-  description: "Me fire som reiste på NDC (Andreas, Stig N, Lasse, Daniel) likte godt en talk av Scott Guthrie hvor han demonstrerer bruk av Azure Cognitive Services og vi har lyst å vise litt hvordan dette fungerer og deretter snakke litt om mulighetene bak dette. Det er foreløpig uvisst hvem av oss som skal snakke om dette, men det kan vi komme tilbake til."
+  description: "Vi har vært på NDC London og sett Scott Guthrie snakke om Azure Cognitive Services. Vi ønsker å demonstrere bruk av noen av disse APIene, samt fortelle litt om teknologien bak. Vil også liste opp relevante brukerhistorier."
   subtype: lightningtalk
   speakers: [20, 34]
 -
