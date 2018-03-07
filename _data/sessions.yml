@@ -51,7 +51,7 @@
   speakers: [2]
 -
   id: 003
-  title: "Managing your own npm ecosystem"
+  title: "Succeeding with your own npm ecosystem"
   description: "Deling av kode er like viktig som det er vanskelig og npm er et flott verktøy for å kunne oppnå deling med andre personer i verden eller i ditt selskap.
 I løpet av denne lyntalen vil jeg dele erfaringer og det jeg mener er best practice rundt hvordan man bør jobbe med et økosystem av npm-pakker."
   subtype: lightningtalk
