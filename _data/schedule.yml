@@ -49,12 +49,12 @@
     - {
         startTime: "13:45",
         endTime: "13:55",
-        sessionIds: [019, 020, 021]
+        sessionIds: [019, 020, 024]
     }
     - {
         startTime: "14:00",
         endTime: "14:10",
-        sessionIds: [022, 023, 024]
+        sessionIds: [022, 023, 021]
     }
     - {
         startTime: "14:15",
