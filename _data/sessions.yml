@@ -214,6 +214,12 @@ Wallaby viser testtilstand, testverdier og coverage rett i editoren din rasker e
   subtype: lightningtalk
   speakers: [27]
 -
+  id: 0277
+  title: "Frå ingenting til app som viser saldo på Fitbit (forts.)"
+  description: "Treng 30 min sånn ca. Ynskjer vise opprettelsen av ein app til Fitbit som hentar saldo fra Sbanken sitt nye API. Demo/koding live."
+  subtype: lightningtalk
+  speakers: [27]
+-
   id: 028
   title: "Hardkår hardkoding"
   description: "Frå database til kode med solid best practice enterprise hardkoding."
