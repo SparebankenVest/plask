@@ -1,8 +1,121 @@
----
-layout: default
-permalink: /
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PLASK 2019</title>
+    <link rel="stylesheet" href="styles/plask.css" />
+    <style type="text/css">
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: rgb(6, 9, 26);
+        color: rgb(240, 240, 240);
+        font-size: 1.25rem;
+      }
+      h1 {
+        font-family: 'Staatliches', cursive;
+        font-weight: 400;
+        font-size: 3rem;
+      }
+      #container {
+        border: 0px solid;
+        max-width: 640px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: auto;
+        display: block;
+        overflow-x: hidden;
+      }
+      #header {
+        top: 0px;
+        position: fixed;
+        width: 642px;
+        height: 300px;
+        z-index: 1;
+        text-align: center;
+        display: block;
+        background: linear-gradient(
+          to bottom,
+          rgba(6, 9, 26, 1) 50%,
+          rgba(6, 9, 26, 0) 100%
+        );
+      }
 
- {% include hero.html %}
+      #content {
+        width: 100%;
+        overflow-x: hidden;
+        clear: both;
+        margin-top: 200px;
+      }
 
- {% include schedule.html %}
+      .post {
+        margin-bottom: 45px;
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+      }
+
+      .post i {
+        color: rgb(127, 127, 127);
+      }
+
+      #header img {
+        max-width: 300px;
+      }
+    </style>
+    <script src="scripts/plask.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Staatliches"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <img src="images/plask-x-splash-transparent.png" alt="Plask Splash" />
+      </div>
+
+      <div id="content">
+        <div class="post">
+          <h1>Når og hvor? 🕛</h1>
+          Fredag den 15. februar 2019 er det igjen klart for internkonferansen
+          Plask arrangert av, for og med Sparebanken Vest og Frende. Stedet er
+          Jonsvoll. Klokkeslettet er "high noon", altså 12:00. Ses vi?
+        </div>
+        <div class="post">
+          <h1>Hva er Plask? 🤔</h1>
+          Innholdet på konferansen er relevante tema for oss som er involvert i
+          å utvikle og forvalte norges beste bank- og forsikringsløsninger.
+          Plask er en ren internkonferanse på Jonsvoll for Frende og Sparebanken
+          Vest. I 2019 blir vi enda flere enn første året 2018, og vi gleder
+          oss!
+        </div>
+        <div class="post">
+          <h1>Format? 📐</h1>
+          Primært ønsker vi lyntaler (lightning talks) på 10 min hver. For å
+          unngå demospøkelser er det oppfordret på det sterkeste til
+        </div>
+        <div class="post">
+          <h1>Kult! Where do I sign up? 🤟</h1>
+          Linken til skjemaet for påmelding er lagt ut på Slack. Søk etter
+          kanalen #plask for å finne infoen.
+        </div>
+        <div class="post">
+          <h1>Om EtterPlask 🍹</h1>
+          EtterPlask er arrangementet.... vel, etter Plask. Her blir det servert
+          mat og drikke, og praten går om funderinger fra dagen som har gått.
+        </div>
+        <div class="post">
+          <h1>Romoversikt 🗺️</h1>
+          <i>Her kommer romoversikten når datoen nærmer seg.</i>
+        </div>
+        <div class="post">
+          <h1>Lyntaleliste 🎤</h1>
+          <i
+            >Her kommer listen over lyntaler når CFP-perioden er ferdig og
+            prosessert.</i
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
