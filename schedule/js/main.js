@@ -412,7 +412,9 @@ jQuery(document).ready(function($) {
       .sort();
     var startRoot = $('#timeline');
     $.each(uniqueStartTimes, function(i, v) {
-      startRoot.append('<li><span>' + v + '</span></li>');
+      startRoot.append(
+        '<li><span class="sidebar-timestamp">' + v + '</span></li>'
+      );
     });
   }
 

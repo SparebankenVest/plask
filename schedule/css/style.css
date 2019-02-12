@@ -197,7 +197,7 @@ Main Components
     /* vertically center its content */
     display: table;
     height: 50px;
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 3px dotted #eaeaea;
     /* reset style */
     padding: 0;
   }
@@ -559,7 +559,7 @@ Main Components
   }
   .cd-schedule .event-modal .close::after,
   .cd-schedule .event-modal .close::before {
-    background: #222222;
+    background: white;
     height: 16px;
   }
 }
@@ -627,4 +627,9 @@ Main Components
 .modal-content > span {
   font-weight: 800;
   font-size: 20px;
+}
+
+.sidebar-timestamp
+{
+  color: rgb(0,0,0,0);
 }
