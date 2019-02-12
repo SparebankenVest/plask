@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  	
+	<title>Program - PLASK 2019</title>
+</head>
+<body>
+<div class="cd-schedule loading">
+	<div class="timeline">
+		<ul id="timeline">
+		</ul>
+	</div> <!-- .timeline -->
+
+	<div class="events" id="eventRoot"></div>
+
+	<div class="event-modal">
+		<header class="header">
+			<div class="content">
+				<span class="event-date"></span>
+				<h3 class="event-name"></h3>
+			</div>
+
+			<div class="header-bg"></div>
+		</header>
+
+		<div class="body">
+			<div class="event-info"></div>
+			<div class="body-bg"></div>
+		</div>
+
+		<a href="#0" class="close">Close</a>
+	</div>
+
+	<div class="cover-layer"></div>
+</div> <!-- .cd-schedule -->
+<script src="js/modernizr.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
+	var tracks = [
+		"Auditoriet (0. etg)",
+		"Undervisningsrommet (1. etg)",
+		"Møterom 110 (1. etg)",
+		"Styrerommet (7. etg)",
+	];
+	var talks = [
+		{
+			Title: "Bulder Bank - Konsept og design",
+			Name: "Pål Nielsen",
+			Description: "En ikke-teknisk gjennomgang av Xbanken. Hva lager vi? Hvorfor har vi valgt retningen vi har? Hvordan har prosessen vært til nå?",
+			Start: "15:30",
+			End: "15:55",
+			Track: 1,
+		},
+		{
+			Title: "Bulder Bank - Teknisk og arkitektur",
+			Name: "Hans Kristian Flaatten",
+			Description: "En veld teknisk gjennomgang av Xbanken. Hva er stacken? Hvorfor har vi valgt stacken? Hvordan er arkitekturen satt opp? Og mye mer",
+			Start: "14:00",
+			End: "14:25",
+			Track: 1,
+		},
+		{
+			Title: "Azure ML Studio - lær deg maskinlæring før det er for seint!",
+			Name: "Endre M. Lidal",
+			Description: "Microsoft Azure ML Studio er ein fin måte å bli å bli kjend med maskinlæring på. Kom og få ein introduksjon til korleis komme i gang og kva muligheiter som tilbys. Passer for alle, både hardcore kodere og dei som foretrekker dra-og-slipp :-) og spesielt dei som ikkje jobber med ML til daglig, men lurer på kva dette eigentleg er. ",
+			Start: "13:30",
+			End: "13:55",
+			Track: 3,
+		},
+		{
+			Title: "Lossless serverless systemer i en modig ny verden",
+			Name: "Håkon Ingvaldsen",
+			Description: "I moderne systemer er informasjon viktigere enn noen gang. Systemer som tar vare på ikke bare dataene, men også transisjonen av tilstand gir merverdi. \n\nSky løsninger har modnet slik at man kan bygge systemer med mindre hensyn til infrastruktur, mindre kode og høyere nivå av abstraksjon.\n\nForedraget tar sikte på å vise konsepter for hvordan man kan utnytte Azure platformen sitt serverless konsept i kombinasjon med eventdrevne teknikker til å hurtig skape systemer uten tap av informasjon.\n",
+			Start: "15:30",
+			End: "15:55",
+			Track: 3,
+		},
+		{
+			Title: "Design tenking på Kredittkort",
+			Name: "Hanne Opedal",
+			Description: "Vi gjennomførte i fjor et Design Thinking prosjekt rundt kredittkort. På tide å presentere funn og erfaringer :)",
+			Start: "15:30",
+			End: "15:55",
+			Track: 4,
+		},
+		{
+			Title: "PLASK - stikke tåen uti eller ta bomben!",
+			Name: "Kjetil Sørtun",
+			Description: "Litt tanker rundt mitt første år i SPV og tanker rundt hvor jeg tror vi går (med en morsom vinkling, håper jeg). Ting jeg har lært, ting jeg har forundret over, ting jeg vet jeg må lære og ting jeg tror vi må gjøre. Arkitektur, struktur, forretning og utvikling. Litt om alt :-)",
+			Start: "13:30",
+			End: "13:55",
+			Track: 1,
+		},
+		{
+			Title: "Mobile lommebøker - Korleis korleis fungerer \"Pay'ene\" (Apple Pay, Google Pay, Garmin Pay m.v.)",
+			Name: "Harald Bjorøy",
+			Description: "Er du nysgjerrig på korleis betaling via mobil og klokke eigentleg fungerer? I dette foredraget med fokus på butikkbetaling får du ei rask gjennomgang på korleis betaling fungerer frå butikken til kontoen din, og kva ein bank eller utferdar av kort må gjere for å støtte dette.",
+			Start: "15:00",
+			End: "15:25",
+			Track: 4,
+		},
+		{
+			Title: "Power Apps",
+			Name: "Betzy Bell Louis",
+			Description: "Viser muligheter innenfor power apps og integrasjon mot powerBI",
+			Start: "12:45",
+			End: "12:55",
+			Track: 4,
+		},
+		{
+			Title: "Natural language processing - Hvordan lage en chatbot",
+			Name: "Lars Aaberg",
+			Description: "Med moderne verktøy fra Microsoft, Google og Amazon i skyen, er det lettere end noen gang å lage en chatbot. Se hvordan en trener en chatbot, som bruker natural language processing til å forstå setninger/kommandoer skrevet i fritekst.",
+			Start: "12:00",
+			End: "12:10",
+			Track: 4,
+		},
+		{
+			Title: "Innføring i Arduino",
+			Name: "Ingrid Andås Berg",
+			Description: "\nHar du lyst å bygge en robot men du vet ikke hvor du skal begynne?\nArduino har gjort elektronikk og mikrokontrollere tilgjengelig for alle og enhver. Det er superenkelt å komme i gang og man finner massevis av eksempler på nett. Kun fantasien setter grenser for hva man kan gjøre. ",
+			Start: "12:30",
+			End: "12:40",
+			Track: 2,
+		},
+		{
+			Title: "GraphQL",
+			Name: "Johannes Fauske",
+			Description: "Johannes snakker om GraphQL og REST.",
+			Start: "14:15",
+			End: "14:25",
+			Track: 4,
+		},
+		{
+			Title: "Figma - vårt nye ux powertool",
+			Name: "Hanne Opedal",
+			Description: "Glem feile invision-lenker og dårlig oversikt. UX presenterer vårt nye verktøy Figma; hvor vi designer, prototyper, kommenterer, brukertester og kan hente ut kode for css, iOS og Android i ett og samme verktøy! Tverrfaglig samarbeidsbliss!",
+			Start: "12:00",
+			End: "12:10",
+			Track: 1,
+		},
+		{
+			Title: "Speed-date med 10 optimeringsproblemer",
+			Name: "Tommy Odland",
+			Description: "Drømmeproblemet kan allerede være i livet ditt, uten at du vet det. Gode løsningsmetoder eksisterer for mange optimeringsproblemer, men å gjenkjenne problemene er ikke alltid enkelt. I denne lyntalen drar vi på speed-date med 10 optimeringsproblemer. Målet er å bli kjent med problemene og løsningene, slik at vi kan gjenkjenne og løse optimeringsproblemer i fremtiden.",
+			Start: "15:15",
+			End: "15:25",
+			Track: 2,
+		},
+		{
+			Title: "Hvordan bruke Logistisk Regresjon for å finne ut hvem som vinner i en fight",
+			Name: "Feda Curic",
+			Description: "Bruker Logistisk regresjon for å predikere hvem som vinner i en fight basert på data fra UFC. Enkel beskrivelse av hele prosessen fra datavask, til ferdig modell.",
+			Start: "12:15",
+			End: "12:25",
+			Track: 4,
+		},
+		{
+			Title: "Introduksjon til effektiv debugging i Visual Studio",
+			Name: "Lars Christian Raae",
+			Description: "Debugging i Visual Studio er mye kraftigere og mer funksjonell enn bare å klikke F9-F11 og lese ut verdier. I denne sesjonen lærer du om teknikker og triks for å debugge mer effektivt i Visual Studio. Vi kikker innom funksjoner som pinning, QuickWatch, Run to cursor, tracepoints m.m.",
+			Start: "13:45",
+			End: "13:55",
+			Track: 4,
+		},
+		{
+			Title: "Erfaringer med egenutviklet cache",
+			Name: "Øystein Haga",
+			Description: "Se på hvordan integrasjonslaget Galactus har brukt egenutviklet cache for å forbedre ytelse og redusere kostnader i SPV. Det gode, det onde og det grusomme.",
+			Start: "15:30",
+			End: "15:40",
+			Track: 2,
+		},
+		{
+			Title: "Azure Durable Functions",
+			Name: "Tor Kårstad",
+			Description: "Innføring i Azure Durable Functions. Eksempel på bruk av dette i en arbeidsflytprosess.",
+			Start: "15:15",
+			End: "15:25",
+			Track: 3,
+		},
+		{
+			Title: "Disruptiv vs. Bærekraftig Innovasjon",
+			Name: "Aasmund Endresen",
+			Description: "Når kan vi se at det er risikabelt med bærekraftig innovasjon? Og hva kan vi gjøre for å bli mindre utsatt for disrupsjon?",
+			Start: "12:00",
+			End: "12:10",
+			Track: 3,
+		},
+		{
+			Title: "Hvordan skape suksess med kryssfunksjonelle team",
+			Name: "Tor Arve Skutlaberg",
+			Description: "Med utgangspunkt i \"Spotify-modellen\" vil jeg se på mulige utfordringer knyttet til den nye teamstrukturen i SPV, vise hvordan andre har løst lignende problemer og hvordan vi kan dra nytte av dette. ",
+			Start: "13:45",
+			End: "13:55",
+			Track: 2,
+		},
+		{
+			Title: "Modige valg i utviklingen av Buffer",
+			Name: "Ørjan Karlsen",
+			Description: "Hvorfor SPV har våget å utvikle Buffer",
+			Start: "14:15",
+			End: "14:25",
+			Track: 2,
+		},
+		{
+			Title: "Telematikk",
+			Name: "Kjetil Folkestad",
+			Description: "Bruk av telematikk i bilforsikring",
+			Start: "12:00",
+			End: "12:10",
+			Track: 2,
+		},
+		{
+			Title: "Mystery shopping - En helsprø opplevelse fra da jeg ble kunde i SPV",
+			Name: "Caroline Kleiven",
+			Description: "Mystery shopping - hvordan oppleves det å bli kunde i SpV. Mer informasjon om hva konkret som blir tema kommer.",
+			Start: "12:15",
+			End: "12:25",
+			Track: 3,
+		},
+		{
+			Title: "Hvordan funker egentlig RPA?",
+			Name: "Jardar Nesse",
+			Description: "Robot i SPV i et (litt) teknisk perspektiv",
+			Start: "14:15",
+			End: "14:25",
+			Track: 3,
+		},
+		{
+			Title: "On joining a programming team",
+			Name: "Ami Ahalpara",
+			Description: "Joining a new programming team to work on an existing product is a situation programmers often find themselves in. In such a situation, becoming productive and delivering business value quickly is a formidable task due to lack of adequate domain knowledge to begin with, exposure to a new code base, getting tuned to a possibly new framework and perhaps to a new programming methodology. Some of the top priorities of a new team member are getting the necessary domain understanding, getting a grasp of the architecture and the reasoning behind the applied methodologies. As vital as all of this is, it cannot be reverse engineered solely by reading the code or the documentation. Based on my experiences gained through working with software companies in two countries and over a decade, I would like to present some of the relevant techniques to quickly arrive at a stage where the new recruit can make a meaningful contribution towards the evolution of the software.",
+			Start: "13:15",
+			End: "13:25",
+			Track: 2,
+		},
+		{
+			Title: "Banktrojaneren Retefe",
+			Name: "Thomas Methlie",
+			Description: "Hva er status på trojaner fronten i Norge og hvordan fungere disse trojanerne",
+			Start: "14:00",
+			End: "14:10",
+			Track: 2,
+		},
+		{
+			Title: "Direktebank - sett fra innsiden",
+			Name: "Jostein Lid",
+			Description: "Det vil ikke være noen teknisk gjennomgang – bare noe om hvordan systemene fungerer sammen på Direktebank.\nHva skjer når en kunde ringer inn, chatter eller sender oss en e-post/et skjema, eller kommenterer noe på Facebook?\n",
+			Start: "12:45",
+			End: "12:55",
+			Track: 1,
+		},
+		{
+			Title: "Erfaringer fra Digitalbanken",
+			Name: "Elisabeth Skorpen",
+			Description: "Erfaringer fra vårt største utviklingsprosjekt",
+			Start: "12:30",
+			End: "12:40",
+			Track: 3,
+		},
+		{
+			Title: "KNOW THE FLOW",
+			Name: "Lasse Tangerås",
+			Description: "Hvordan navigerer våre kunder seg egentlig rundt på våre flater? Kan IT bransjen lære av andre infrastrukturer rundt oss?",
+			Start: "12:45",
+			End: "12:55",
+			Track: 3,
+		},
+		{
+			Title: "Innsamling av data fra kjøretøy for forsikring og flåtestyring",
+			Name: "Marius Langøy",
+			Description: "Vi tar for oss fremgangsmåter for å hente inn CAN data fra bil/buss og supplere dette med GPS med tanke på use cases innenfor flåtestyring og forsikring.",
+			Start: "12:15",
+			End: "12:25",
+			Track: 2,
+		},
+		{
+			Title: "Life is confusing and people are insane",
+			Name: "André Heie Vik",
+			Description: "Endring er vanskelig og forvirrende. Hvorfor er det sånn? Kan vi gjøre noe med det? \nGjennom denne lyntalen vil jeg introdusere Cynefin, et sensemaking-rammeverk som hjelper oss å ta beslutninger og løse problemer i en forvirrende verden.",
+			Start: "15:15",
+			End: "15:25",
+			Track: 1,
+		},
+		{
+			Title: "You'll guess what happens next",
+			Name: "David Fredman",
+			Description: "Hvordan kan vi gå fra å vise kontohistorikk til å forutsi kundens kommende utgifter? Om det pågående onlinekjøpet vil avsluttes før kjøp? Om kunden straks vil ringe kundeservice?  Metoder og eksempel på prediksjon av kommende hendelser med \"dype\" nevrale nettverk.",
+			Start: "12:30",
+			End: "12:40",
+			Track: 4,
+		},
+		{
+			Title: "Hvordan teknologiske sammenfall leder til 12 uunngåelige krefter",
+			Name: "Unni Flagtveit",
+			Description: "Et forsøk på å trekke ut essensen fra teknologioptimisten Kevin Kelly sin bok:  \"The inevitable, understanding the 12 technological forces that will shape the future\".",
+			Start: "15:00",
+			End: "15:10",
+			Track: 1,
+		},
+		{
+			Title: "Robotisering i SPV",
+			Name: "Egil Kloster",
+			Description: "En overordnet presentasjon av roboter i SPV. ",
+			Start: "14:00",
+			End: "14:10",
+			Track: 3,
+		},
+		{
+			Title: "Vim level 1-4",
+			Name: "Martin Ulvesæter",
+			Description: "God gammeldags pluginfri vim. Det blir litt jkhl før vi går videre til dd og cw. Hvis vi får tid blir det litt . og qq@q på slutten",
+			Start: "14:00",
+			End: "14:10",
+			Track: 4,
+		},
+		{
+			Title: "Fra Open Banking i Vest til Open Insurance i Østen",
+			Name: "Paul Austrem",
+			Description: "Open Banking er i vinden som aldri før takket være PSD2.\nMen hva med forsikring? Kort om hvordan Open Insurance allerede er i bruk i det fjerne østen og hvilke nye krav det kan stille til arkitekturen vår",
+			Start: "13:15",
+			End: "13:25",
+			Track: 1,
+		},
+		{
+			Title: "React Native i 2019",
+			Name: "Andrea Cresta",
+			Description: "React Native fikk mye oppmerksomhet når det ble åpnet for alle og mange forskjellige firmaer har brukt det i produksjon etter det. Hva er erfaringene deres og hvilke fordeler og ulemper har de sett?  Hva er neste for React Native?",
+		},
+		{
+			Title: "Nytt i C# 8.0",
+			Name: "Henrik Gundersen",
+			Description: "En rask praktisk gjennomgang av de store nye tingene i C# 8.0. ",
+			Start: "13:15",
+			End: "13:25",
+			Track: 4,
+		},
+		{
+			Title: "Erfaringer med autonome team i en tilfeldig gebyrfri nettbankkonkurrent ",
+			Name: "Trond Aasen",
+			Description: "Hvordan sette scope og prioritere sammen som ett team",
+			Start: "13:30",
+			End: "13:40",
+			Track: 2,
+		},
+		{
+			Title: "SPV Brukertest - etter inspirasjon fra Google Design Sprint",
+			Name: "Vibeke Storvik",
+			Description: "Vi endret prosessen for gjennomføring av brukertest i desember 2018 etter inspirasjon fra Google Design Sprint. VI har nå  gjennomført 3 brukertester etter SPV-malen (m/kontinuerlige forbedring). Vi er stolt av endringen og deler prosessen og erfaringer.",
+			Start: "12:15",
+			End: "12:25",
+			Track: 1,
+		},
+		{
+			Title: "La Elm vise vei!",
+			Name: "Ovin Teige",
+			Description: "Se på hvordan vi har laget en veiviser i Elm",
+			Start: "15:45",
+			End: "15:55",
+			Track: 2,
+		},
+		{
+			Title: "Intro til Maskinlæring",
+			Name: "Kåre Lærum",
+			Description: "Hva er maskinlæring og hvordan fungerer det grunnleggende? ",
+			Start: "13:15",
+			End: "13:25",
+			Track: 3,
+		},
+		{
+			Title: "CosmosDB",
+			Name: "Lars Aaberg",
+			Description: "CosmosDB er en global distribuert dokument-database i Azure som skalerer \"ubegrenset\", så lenge du klarer å styre unna fallgruvene. ",
+			Start: "15:00",
+			End: "15:10",
+			Track: 3,
+		},
+		{
+			Title: "Contract first - kontraktsdrevet API utvikling",
+			Name: "Roger Solsvik",
+			Description: "Erfaringer med å jobbe kontraktsfokusert for utvikling av APIer og nyttige verktøy for utvikling, test og dokumentasjon.\nEksempel med bruk av CircleCI, Postman, SoapUI, ReDoc og Dredd\n",
+			Start: "15:00",
+			End: "15:10",
+			Track: 2,
+		},
+		{
+			Title: "HTTP/3 - Hva er det?",
+			Name: "Daniel Lundekvam",
+			Description: "HTTP/3 is the upcoming third major version of the Hypertext Transfer Protocol used to exchange binary information on the World Wide Web.[1] HTTP/3 is based on previous RFC draft \"Hypertext Transfer Protocol (HTTP) over QUIC\".[2] QUIC is an experimental transport layer network protocol initially developed by Google.",
+			Start: "12:45",
+			End: "12:55",
+			Track: 2,
+		},
+		{
+			Title: "7 tips for annonsørlykke i et annonsemarked preget av tillitskrise",
+			Name: "Espen Grimmert",
+			Description: "Facebook, Google og mediebyråene sliter med tilliten. Blir annonsene vist der de skal? Hva med klikksvindel? Eller annonsører som finansierer noe de slett ikke vil støtte.  Hør hva Sparebanken Vest gjør for å sikre mest mulig relevant synlighet for minst mulig penger",
+			Start: "12:30",
+			End: "12:40",
+			Track: 1,
+		},
+		{
+			Title: "Snackspause",
+			Name: "Plask komiteen",
+			Description: "Servering utenfor auditoriet i 0. etg",
+			Start: "13:00",
+			End: "13:14",
+			Track: 1,
+		},
+		{
+			Title: "Snackspause",
+			Name: "Plask komiteen",
+			Description: "Servering utenfor auditoriet i 0. etg",
+			Start: "13:00",
+			End: "13:14",
+			Track: 2,
+		},
+		{
+			Title: "Snackspause",
+			Name: "Plask komiteen",
+			Description: "Servering utenfor auditoriet i 0. etg",
+			Start: "13:00",
+			End: "13:14",
+			Track: 3,
+		},
+		{
+			Title: "Snackspause",
+			Name: "Plask komiteen",
+			Description: "Servering utenfor auditoriet i 0. etg",
+			Start: "13:00",
+			End: "13:14",
+			Track: 4,
+		},
+		{
+			Title: "Matpause",
+			Name: "Plask komiteen",
+			Description: "Servering utenfor auditoriet i 0. etg",
+			Start: "14:30",
+			End: "14:59",
+			Track: 1,
+		},
+		{
+			Title: "Matpause",
+			Name: "Plask komiteen",
+			Description: "Servering utenfor auditoriet i 0. etg",
+			Start: "14:30",
+			End: "14:59",
+			Track: 2,
+		},
+		{
+			Title: "Matpause",
+			Name: "Plask komiteen",
+			Description: "Servering utenfor auditoriet i 0. etg",
+			Start: "14:30",
+			End: "14:59",
+			Track: 3,
+		},
+		{
+			Title: "Matpause",
+			Name: "Plask komiteen",
+			Description: "Servering utenfor auditoriet i 0. etg",
+			Start: "14:30",
+			End: "14:59",
+			Track: 4,
+		},
+		{
+			Title: "????",
+			Name: "NaN",
+			Description: "Hvem blir dette?",
+		 	Start: "13:30",
+		 	End: "13:40",
+		 	Track: 4,
+		},
+
+
+	];
+</script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>
