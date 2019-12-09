@@ -1,119 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <title>PLASK 2019</title>
-    <link rel="stylesheet" href="styles/plask.css" />
+    <title>PLASK 2020</title>
     <style type="text/css">
-      body {
-        font-family: 'Roboto', sans-serif;
-        background-color: rgb(6, 9, 26);
-        color: rgb(240, 240, 240);
-        font-size: 1.25rem;
-      }
-      h1 {
-        font-family: 'Staatliches', cursive;
-        font-weight: 400;
-        font-size: 3rem;
-      }
-      a,a:hover,a:active,a:visited {        
-        color: #BEEAFF;
-        text-transform: uppercase;
-      }
-      #container {
-        border: 0px solid;
-        max-width: 640px;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin: auto;
-        display: block;
-        overflow-x: hidden;
-      }
-      #header {
-        top: 0px;
-        position: fixed;
-        width: 642px;
-        height: 300px;
-        z-index: 1;
-        text-align: center;
-        display: block;
-        background: linear-gradient(
-          to bottom,
-          rgba(6, 9, 26, 1) 50%,
-          rgba(6, 9, 26, 0) 100%
-        );
-      }
+        @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
 
-      #content {
-        width: 100%;
-        overflow-x: hidden;
-        clear: both;
-        margin-top: 200px;
-      }
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background-color: rgb(20, 20, 20);
+            color: white;
+        }
 
-      .post {
-        margin-bottom: 45px;
-        width: 100%;
-        margin-top: 50px;
-        text-align: center;
-      }
+        h2,
+        a {
+            color: rgb(250, 200, 1);
+        }
 
-      .post i {
-        color: rgb(127, 127, 127);
-      }
+        .ps {
+            font-size: 1rem;
+            font-style: italic;
+        }
 
-      #header img {
-        max-width: 300px;
-      }
+        #root {
+            text-align: center;
+            width: 100%;
+        }
+
+        #logo-container {
+            margin: 0 auto;
+        }
+
+        .logo {
+            object-fit: cover;
+            max-width: 800px;
+        }
+
+        #content {
+            font-size: 1.6rem;
+        }
+
+        #content p, #content h2{
+            margin-bottom: 100px;
+        }
     </style>
-    <script src="scripts/plask.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto|Staatliches"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="container">
-      <div id="header">
-        <img src="images/plask-x-splash-transparent.png" alt="Plask Splash" />
-      </div>
+</head>
 
-      <div id="content">
-        <div class="post">
-          <h1>Programmet</h1>
-          Årets program finner du <a href="/schedule">her</a>. Det vil nok skje småjusteringer frem til PLASK.
+<body>
+    <div id="root">
+        <div id="logo-container">
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_TG4_oktUxA8Wh9aSggnBqFA9dk0RFDivnDA2a4elEQAsdA/viewform?usp=sf_link"><img
+                    class="logo" src="images/plask2020.gif" alt="Plask 2020 GIF" /></a>
         </div>
-        <div class="post">
-          <h1>Når og hvor? 🕛</h1>
-          Fredag den 15. februar 2019 er det igjen klart for internkonferansen
-          Plask arrangert av, for og med Sparebanken Vest og Frende. Stedet er
-          Jonsvoll. Klokkeslettet er "high noon", altså 12:00. Ses vi?
-        </div>
-        <div class="post">
-          <h1>Hva er egentlig Plask? 🤔</h1>
-          Innholdet på konferansen er relevante tema for oss som er involvert i
-          å utvikle og forvalte norges beste bank- og forsikringsløsninger.
-          Plask er en ren internkonferanse på Jonsvoll for Frende og Sparebanken
-          Vest. I 2019 blir vi enda flere enn første året 2018, og vi gleder
-          oss!
-        </div>
-        <div class="post">
-          <h1>Format? 📐</h1>
-          Primært ønsker vi lyntaler (lightning talks) på 10 min hver. For å
-          unngå demospøkelser er det oppfordret på det sterkeste til en forhåndslaget presentasjon uten demoer, live-koding, dansing og andre høyrisiko formater.
-        </div>
-        <div class="post">
-          <h1>Kult! Where do I sign up? 🤟</h1>
-          Linken til skjemaet for påmelding er lagt ut på Slack. Søk etter
-          kanalen #plask for å finne infoen.
-        </div>
-        <div class="post">
-          <h1>Om EtterPlask 🍹</h1>
-          EtterPlask er arrangementet.... vel, etter Plask. Her blir det servert
-          mat og drikke, og praten går om funderinger fra dagen som har gått.
-        </div>
+        <div id="content">
+            <h2>Vi trenger deg!</h2>
 
-      </div>
+            <p>Klikk på logoen over ☝ for å sende inn et forslag til lyntale/foredrag</p>
+            <p>Gå til Slack-kanalen <a href="https://slack.com/app_redirect?channel=plask">#plask</a> for mer informasjon og
+                diskusjon</p>
+            <p class="ps">PS. Du kan laste ned <a href="images/plask2020-wallpaper.png">wallpaper</a> her</p>
+
+
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
